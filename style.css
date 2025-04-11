@@ -1,0 +1,350 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+button{
+    cursor: pointer;
+}
+.menu-title p{
+    text-align: center;
+}
+.menu-title img{
+    width: 100px;
+}
+#menu-bar{
+    height: 100px;
+    /* margin-bottom: -60px; */
+    background-color: orangered;
+    /* align-items: center; */
+    background-attachment: fixed;
+}
+#menu-bar ul{
+    display: flex;
+}
+#menu-bar li{
+    list-style: none;
+    margin-top: 1em;
+}
+#menu-bar .order{
+    margin-right: auto;
+    padding: .7em;
+}
+#menu-bar button{
+    background-color: orangered;
+    color: white;
+    padding: .5em;
+    /* border: 2px solid whitesmoke; */
+}
+#menu-bar button:hover{
+    color: orangered;
+    background-color: white;
+}
+#menu-bar button:active{
+    opacity: 1%;
+}
+#menu-bar .sign{
+    margin-left: auto;
+    padding: .7em;
+}
+#restaurant-body{
+    background-image: url(/background.jpg);
+    background-repeat: repeat;
+    background-size: 200px;
+}
+.end-body{
+    background-image: url(/background1.jpg);
+    background-repeat: repeat;
+    background-size: 420px;
+    /* background-attachment: fixed; */
+}
+div#container{
+    margin:10% auto;
+    background-color: white;
+    width: 60%;
+    padding: 2em;
+    border-radius: 10px;
+    line-height: 1.6em;
+    max-width: 550px;
+    min-width: min-content;
+}
+#container img{
+    width: 100px;
+    /* float: left; */
+}
+.note{
+    /* clear: left; */
+    text-align: justify;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+.served{
+    background-color: black;
+    color: white;
+    padding: .2em;
+    width: fit-content;
+    border-radius: 10px;
+    margin: .5em 0;
+}
+h4{
+    text-decoration: underline;
+}
+.name{
+    color: orangered;
+    margin: .2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 26px 0px 0px 20px;
+    /* background-image: to left yellow red blue;
+    -webkit-background-mox: text; */
+}
+.dishes{
+    color: green;
+}
+.exotic{
+    color: orange;
+}
+.drinks{
+    color: blue;
+}
+li{
+    list-style-image: url(/strawberry-icon.png);
+}
+.login-page{
+    color: orangered;
+    text-decoration: underline;
+    padding-bottom: 1em;
+    text-decoration-color: black;
+    font-style: italic;
+}
+#login-container{
+    margin: 8% auto;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    box-shadow: 4px 4px 6px orangered;
+    max-width: 450px;
+    min-width: min-content;
+}
+#login-container h3{
+    color: white;
+    padding:.5em;
+    text-align: center;
+    margin-top: 2.5em;
+}
+#logo-part img{
+    width: 3.5em;
+    height: 50%;
+    margin: 60% 0 0 0;
+}
+#logo-part p{
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+#logo-part h3{
+    margin-top: -5%;
+    font-size: 1em;
+}
+#logo-part{
+    background-color: orangered;
+    width: max-content;
+}
+#form{
+    background-color: whitesmoke;
+    padding: 3em 2em 3em 2em;
+    width: 65%;
+    font-size: .7em;
+}
+#option-form label{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+input{
+    background-color: white;
+}
+#form input{
+    padding: 1em;
+    width: 100%;
+    font-size: .7em;
+    border: 2px solid orangered;
+    font-weight: bolder;
+}
+#form input::placeholder{
+    color: black;
+    font-weight: lighter;
+}
+#form p{
+    text-align: center;
+}
+#form button{
+    background-color: orangered;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1em;
+    font-size: .8em;
+    font-weight: bolder;
+    color: white;
+}
+#form button:hover{
+    color: orangered;
+    background-color: white;
+}
+#form button:active{
+    opacity: 0.2%;
+}
+.option{
+    font-size: 1.5em;
+}
+.title p{
+    text-align: center;
+}
+.title{
+    /* background-color: blue; */
+    display: flex;
+}
+#option-form{
+    margin: .5em auto;
+    background-color: white;
+    max-width: 70%;
+    padding: 2em;
+    border: 3px solid orangered;
+    border-radius: 10px;
+}
+#tofill{
+    /* margin-right: 10%; */
+    padding: .5em;
+    width: 100%;
+}
+#box{
+    margin-left: 10px;
+    width: 1.2em;
+    height: 1.2em;
+}
+/* #option-form button{
+    background-color: white;
+    border: 2px solid black;
+    padding: 1em;
+    font-size: .8em;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+} */
+
+#option-form input::placeholder{
+    color: rgb(230, 118, 77);
+}
+#option-form a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+#option-form .button{
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    background-color: orangered;
+    padding: .5em;
+    border: 2px solid white;
+}
+#option-form a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.transfer{
+    width: fit-content;
+    margin: 20% auto;
+    background-color: white;
+    padding: 2em;
+    border: 2px dashed orangered;
+    text-align: center
+}
+.transfer button{
+    background-color: orangered;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1em;
+    font-size: .8em;
+    font-weight: bolder;
+    color: white;
+    margin: 4em 0 0 0;
+}
+.transfer button:hover{
+    background-color: white;
+    color: orangered;
+}
+.patronage{
+    width: fit-content;
+    margin: 20% auto;
+    background-color: white;
+    padding: 2em;
+    border: 12px solid orangered;
+    text-align: center
+}
+.patronage button{
+        background-color: orangered;
+        text-align: center;
+        border: 2px solid black;
+        padding: 1em;
+        font-size: .8em;
+        font-weight: bolder;
+        color: white;
+        margin: 4em 0 0 0;
+}
+marquee{
+    margin: 2em 0 0 0;
+    color: orangered;
+}
+html{
+    scroll-behavior: smooth;
+}
+#top{
+    position: relative;
+    top: 0;
+}
+#bottom{
+    position: relative;
+    bottom: 0;
+}
+#sign-up{
+    margin: 20% auto;
+    background-color: whitesmoke;
+    width: 80%;
+    border: 5px solid orangered;
+    padding: 2em;
+    border-radius: 10px;
+}
+#sign-up input{
+    width: 100%;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+#sign-up inputhover{
+    color: orangered;
+}
+#createAcct{
+    margin: 10% 30% 0 35%;
+    padding: .5em;
+    color: orangered;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+#createAcct:hover{
+    background-color: orangered;
+    color: white;
+}
+.create{
+    color: orangered;
+    text-decoration: underline;
+    padding-bottom: 1.5em;
+    text-decoration-color: black;
+    font-style: italic;
+    text-align: center;
+}

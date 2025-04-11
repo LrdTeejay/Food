@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="login-body">
+    <div id="login-container">
+        <div id="logo-part">
+            <p><img src="chef-logo.png" alt="chef-logo"></p>
+        <h3>Delicious <br>Restaurant</h3>
+        </div>
+        <form id="form" action="food.html">
+            <h2 class="login-page">Login Page</h2>
+            <b>Name:</b><input type="text" id="name" placeholder="Name or Email Address" required> <br> <br> 
+            <b>Password:</b>
+            <input type="password" placeholder="Password" id="password" required><br><br>
+            <p><a href="#">forgot password?</a><br> <br>
+           <button type="submit" id="submit">SUBMIT</button></p> 
+        </form>
+    </div>
+    <div id="sign-up">
+        <h3 class="create">Create Account</h3>
+        <form id="form2" action="#">
+            <label for="">First Name:</Label>
+            <input type="text"> <br><br>
+            <label for="">Surname:</Label>
+            <input type="text"> <br><br>
+            <label for="">Username:</label>
+            <input type="text" id="username"> <br><br>
+            <label for="">Phone number:</label> 
+            <input type="phone number"><br><br>
+            <label for="">Password</label> 
+            <input type="password" id="passcode"><br><br>
+            <label for="">Confirm Password</label>
+            <input type="password">
+            <button id="createAcct">Create Account</button>
+        </form>
+    </div>
+    <script>
+        // alert("Hi New user")
+        var form = document.getElementById('form');
+        form.addEventListener('submit', (e) => 
+    {
+        var name = document.getElementById('name').value;
+        var password = document.getElementById('password').value;
+        if (name === '' || password === ''){
+            e.preventDefault();
+            alert("Please fill in both name and password fields.");
+        }
+        else if(name !== 'Teejay' || password !== '12345'){
+            e.preventDefault();
+            alert('Incorrect Password');
+        }
+        var storedUsername = localStorage.getItem('username');
+        var storedPassword = localStorage.getItem('passcode');
+        //To check if username and password match
+        if (user === storedUsername && password === storedPassword){
+            e.preventDefault();
+            alert('Login successfully');
+        }else{
+            alert('invalid passcode');
+        }
+    });
+    const form2 = document.getElementById('form2');
+        form2.addEventListener('createAcct', (e) =>{
+        const username = document.getElementById('username').value;
+        const passcode = document.getElementById('passcode').value;
+            if(username === '' || passcode === ''){
+            e.preventDefault();
+            alert("Please fill in both name and password fields.");
+            }
+            //To store data in localstorage
+            localStorage.setItem('username', username);
+            localStorage.setItem('passcode', passcode);
+            alert('You have successfully created your Account!');
+        });
+    </script>
+</body>
+</html>
